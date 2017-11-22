@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--
+            android:id：唯一标识
+            android:layout_width：控件宽度
+            android:layout_height：控件高度
+                match_parent：当前控件的大小和父布局的大小一样；
+                wrap_content：当前控件的大小刚好包住里面的内容；
+                fill_parent：
+            android:gravity：对齐方式；
+                top：
+                bottom：
+                left：
+                right：
+                center_vertical|center_horizontal
+            android:textSize：文字的大小；
+            android:textColor：文字的颜色；
+            android:textAllCaps：设置所有英文字母自动进行大写转换；
+            android:hint：提示性文本；
+            android:maxLines：EditText的最大行高；
+        -->
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="This is TextView"
+            android:textColor="#00ff00"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type something here"
+            android:maxLines="2" />
+
+        <Button
+            android:id="@+id/displaytextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="显示TextView"
+            android:textAllCaps="false" />
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_1" />
+
+        <Button
+            android:id="@+id/changePic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="切换图片"
+            android:textAllCaps="false" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_cycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/process_bar_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="显示/隐藏进度条" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_step"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100" />
+
+        <Button
+            android:id="@+id/process_bar_add10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="进度条+10" />
+
+        <Button
+            android:id="@+id/alertDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="弹出AlertDialog"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/processDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="弹出ProcessDialog"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+</ScrollView>
